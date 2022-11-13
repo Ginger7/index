@@ -1,0 +1,653 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>StartXMoscow</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+        <meta name="facebook-domain-verification" content="p80gebtr4axh4n96pe373ws33jygwu" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#eb00ff">
+        <meta name="msapplication-TileColor" content="#1a51f3">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+        <script src="static/js/separate-js/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <meta content="no" http-equiv="imagetoolbar">
+        <!-- ! Для production использовать vue_vuex_prod.js !-->
+        <script src="static/js/separate-js/vue_vuex.js"></script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '2868177430135183');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2868177430135183&ev=PageView&noscript=1" />
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+            ym(33209983, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        </script>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/33209983" style="position:absolute; left:-9999px;" alt="" />
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69227006-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-69227006-1');
+        </script>
+    </head>
+
+    <body class="page page-application">
+
+
+        <div class="page__wrapper">
+
+            <div class="header-simple">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <a href="https://starthub.moscow/" class="header-simple__link">
+                                < Вернуться на сайт</a>
+                        </div>
+                        <div class="col-xs-auto col-12 mb-2">
+                            <a href="https://starthub.moscow/" class="header-simple__logo">
+                                <img src="static/img/general/logo.svg" width="168">
+                            </a>
+                        </div>
+                        <!--<div class="col-auto me-lg-0 ms-lg-auto pe-lg-4 mb-2">
+                    <a href="https://www.mos.ru/dpir/" class="header-simple__logo">
+                        <img src="static/img/general/dpi.svg" width="176">
+                    </a>
+                </div>
+                <div class="col-auto mb-2">
+                    <a href="https://innoagency.ru/ru/" class="header-simple__logo">
+                        <img src="static/img/general/aim.svg" width="118">
+                    </a>
+                </div>-->
+                    </div>
+                </div>
+            </div>
+            <section class="section section-application">
+                <div class="container-fluid">
+                    <form class="form-customs form-application" action="https://portal.inno.msk.ru/crm/project/48/event/34/forms/50/handling-incomming-data/" method="post" data-form-custom style="display: none">
+                        <h1>
+
+                    Заявка на участие в программе StartHub.Moscow
+
+                </h1>
+                        <h2>
+
+                    Шаг 1. Контактные данные
+
+                </h2>
+                        <div class="form-customs-group" data-field-type="text" required>
+                            <p class="form-customs-title">Фамилия * :</p>
+                            <input type="text" class="form-input" name="fields[628]" placeholder="">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text" required>
+                            <p class="form-customs-title">Имя * :</p>
+                            <input type="text" class="form-input" name="fields[629]" placeholder="">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text">
+                            <p class="form-customs-title">Отчество:</p>
+                            <input type="text" class="form-input" name="fields[630]" placeholder="">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text" required>
+                            <p class="form-customs-title">E-mail * :</p>
+                            <input type="text" class="form-input" name="fields[632]" placeholder="" data-container="email">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text" required>
+                            <p class="form-customs-title">Телефон * :</p>
+                            <input type="text" class="form-input" name="fields[631]" placeholder="" data-container="phone">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <!--   <div class="form-customs-group" data-field-type='checkbox'>
+                       <input type="checkbox" id="subscribe"
+                              value="Я даю свое согласие на получение рассылки рекламного характера от ГБУ &quot;Агентство инноваций Москвы&quot;">
+                       <label class="form-customs-checkbox" for="subscribe">Я даю свое согласие на получение рассылки
+                           рекламного
+                           характера от ГБУ "Агентство инноваций Москвы"</label></div>-->
+                        <div class="form-customs-group" data-field-type='checkbox'>
+                            <input type="checkbox" id="agree" value="Я ознакомлен(а) и принимаю условия обработки персональных данных" required>
+                            <label class="form-customs-checkbox" for="agree">
+                                Я даю свое согласие на обработку моих персональных данных на условиях
+                                <a href="https://innoagency.ru/_soglashenie_pd.pdf" target="_blank">соглашения об обработке
+
+                            персональных данных.</a>
+                            </label>
+                        </div>
+
+                        <div class="form-customs-group" data-field-type="text">
+                            <small>*Обязательные к заполнению поля</small>
+                        </div>
+                        <div>
+                            <div class="form-check ps-0">
+                                <button type="submit" class="form-customs-btn btn btn-secondary" disabled>Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="form-customs form-application" action="https://portal.inno.msk.ru/crm/project/48/event/34/forms/50/handling-incomming-data/" method="post" data-form-custom style="display: none">
+
+                        <h1>
+
+                    Заявка на участие в программе StartHub.Moscow
+
+                </h1>
+
+                        <h2>
+
+                    Шаг 2. Компания и продукт
+
+                </h2>
+                        <div class="form-customs-group" data-field-type="text" required>
+                            <p class="form-customs-title">Название компании (ЮЛ/ИП) * :</p>
+                            <input type="text" class="form-input" name="fields[634]" placeholder="">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text" required>
+                            <p class="form-customs-title">ИНН компании * :</p>
+                            <input type="text" class="form-input" name="fields[635]" placeholder="">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text" required>
+                            <p class="form-customs-title">Сайт компании * :</p>
+                            <input type="text" class="form-input" name="fields[636]" placeholder="">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text" required>
+                            <p class="form-customs-title">Название продукта/проекта * :</p>
+                            <input type="text" class="form-input" name="fields[637]" placeholder="">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea" required>
+                            <p class="form-customs-title">Краткое описание продукта * :</p>
+                            <textarea class="form-textarea" name="fields[638]" placeholder=""></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="dropdownlist" required>
+                            <p class="form-customs-title">Стадия продукта * :</p>
+                            <select class="form-input" name="fields[639]">
+                                <option value="Есть идея и концепция продукта">Есть идея и концепция продукта</option>
+                                <option value="Ведется разработка MVP">Ведется разработка MVP</option>
+                                <option value="MVP готов, но пока нет пилотных тестирований и продаж">MVP готов, но пока нет пилотных тестирований и продаж
+                                </option>
+                                <option value="MVP готов, проводится пилотное тестирование и/или есть первые продажи">MVP готов, проводится пилотное тестирование и/или есть первые продажи
+                                </option>
+                                <option value="Продукт готов, есть клиенты и стабильные продажи">Продукт готов, есть клиенты и стабильные продажи
+                                </option>
+                                <option value="Масштабирование, компания ищет выходы на новые рынки">Масштабирование, компания ищет выходы на новые рынки
+                                </option>
+                            </select>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea" required>
+                            <p class="form-customs-title">Проблема, которую решает продукт * :</p>
+                            <textarea class="form-textarea" name="fields[640]" placeholder="Опишите, какие проблемы (бизнес-проблемы, технологические, организационные и т. п.) решает Ваш продукт. Насколько описанные проблемы специфичны для российского и глобального рынков?"></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea" required>
+                            <p class="form-customs-title">Описание технологического решения * :</p>
+                            <textarea class="form-textarea" name="fields[641]" placeholder="Опишите технологию, которая лежит в основе Вашего продукта. Уточните, используются ли технологии ИИ или смежные ему технологии, иные наукоемкие технологии."></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea" required>
+                            <p class="form-customs-title">Конкурентные преимущества * :</p>
+                            <textarea class="form-textarea" name="fields[642]" placeholder="Опишите технологические и бизнес-преимущества Вашего продукта. Укажите основных конкурентов."></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea" required>
+                            <p class="form-customs-title">Описание бизнес-модели продукта * :</p>
+                            <textarea class="form-textarea" name="fields[657]" placeholder="Опишите монетизацию (как зарабатываете/планируете зарабатывать деньги). Укажите Вашего клиента (B2C, B2B, B2B2C или т. д.). Укажите Ваш целевой сегмент рынка и его размеры (TAM, SAM, SOM, если просчитывались). Укажите стоимость Вашего продукта."></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea" required>
+                            <p class="form-customs-title">Основные бизнес-метрики продукта * :</p>
+                            <textarea class="form-textarea" name="fields[643]" placeholder="Укажите поквартальные метрики (выручка, число клиентов, количество активных и выполненных пилотных проектов и другие метрики, используемые в Вашей бизнес-модели) за 2021 г. или меньший период, если компания существует менее года. "></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="radiobuttonlist" required>
+                            <p class="form-customs-title">Достижимый объем рынка в рублях в ближайшие 2 года * :</p>
+                            <div class="form-customs-row">
+                                <div>
+                                    <div class="form-check">
+                                        <input type="radio" id="i0" class="form-check-input" name="fields[658]" value="Свыше 300 млн рублей годовой выручки">
+                                        <label class="form-check-label" for="i0">Свыше 300 млн рублей годовой выручки</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="i1" class="form-check-input" name="fields[658]" value="От 300 млн до 100 млн рублей годовой выручки">
+                                        <label class="form-check-label" for="i1">От 300 млн до 100 млн рублей годовой выручки
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="i2" class="form-check-input" name="fields[658]" value="От 100 млн до 40 млн рублей годовой выручки">
+                                        <label class="form-check-label" for="i2">От 100 млн до 40 млн рублей годовой выручки
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="i3" class="form-check-input" name="fields[658]" value="От 40 млн до 10 млн рублей годовой выручки">
+                                        <label class="form-check-label" for="i3">От 40 млн до 10 млн рублей годовой выручки
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="i4" class="form-check-input" name="fields[658]" value="Менее 10 млн рублей годовой выручки">
+                                        <label class="form-check-label" for="i4">Менее 10 млн рублей годовой выручки</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea" required>
+                            <p class="form-customs-title">Описание компетенций команды * :</p>
+                            <textarea class="form-textarea" name="fields[644]" placeholder="Расскажите о Вашей команде, включая: общую численность команды, работающей над продуктом; основные компетенции и сильные стороны команды; описание ключевых сотрудников Вашей команды:лидер команды: фамилия и имя, опыт предпринимательской деятельности (например, опыт основания другого бизнеса); бизнес-команда: фамилия и имя, позиция и задачи; техническая команда: фамилия и имя, позиция и задачи."></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea" required>
+                            <p class="form-customs-title">Объём инвестиций * :</p>
+                            <textarea class="form-textarea" name="fields[659]" placeholder="Укажите объём и источник внешних инвестиций, привлечённых и/или привлекаемых на развитие продукта). Укажите, если финансирование происходило только из личных средств."></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="textarea">
+                            <p class="form-customs-title">Укажите участие в акселерационных программах в 2021–2022 гг.:</p>
+                            <textarea class="form-textarea" name="fields[660]" placeholder="Перечислите названия акселерационных программ и сроки принятия участия. "></textarea>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="checkboxlist">
+                            <p class="form-customs-title">Цель участия в программе:</p>
+                            <div class="form-customs-row">
+                                <div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="i5" class="form-check-input" name="fields[645][]" value="привлечение инвестиций">
+                                        <label class="form-check-label" for="i5">привлечение инвестиций</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="i6" class="form-check-input" name="fields[645][]" value="кратный рост бизнес-метрик">
+                                        <label class="form-check-label" for="i6">кратный рост бизнес-метрик</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="i7" class="form-check-input" name="fields[645][]" value="оптимизация бизнес-процессов в компании и/или развитие бизнес-навыков">
+                                        <label class="form-check-label" for="i7">оптимизация бизнес-процессов в компании и/или развитие бизнес-навыков
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="i8" class="form-check-input" name="fields[645][]" value="нетворкинг">
+                                        <label class="form-check-label" for="i8">нетворкинг</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="i9" class="form-check-input" name="fields[645][]" value="коворкинг">
+                                        <label class="form-check-label" for="i9">коворкинг</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text">
+                            <input type="text" class="form-input" name="fields[646]" placeholder="Свой вариант">
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="file">
+                            <p class="form-customs-title">Презентация или дополнительные материалы:</p>
+                            <div class="form-customs-file">
+                                <input type="file" id="field_647" name="fields[647][]" multiple>
+                                <label class="form-customs-btn" for="field_647">
+                                    <span>Прикрепить файл</span>
+                                </label>
+                            </div>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="pd_agree" required>
+                            <input type="checkbox" id="field_661" name="fields[661]" value="Я ознакомлен и принимаю условия &lt;a href=&quot;../files/Pravila_programmy_2022.pdf&quot;&gt;нормативных документов программы StartHub.Moscow&lt;/a&gt;">
+                            <label class="form-customs-checkbox" for="field_661">Я ознакомлен и принимаю условия
+                                <a href="../files/Pravila_programmy_2022.pdf">нормативных
+
+                            документов программы StartHub.Moscow</a> *
+                            </label>
+                            <div class="form-customs-error-message d-none">Пожалуйста, заполните все обязательные поля</div>
+                        </div>
+                        <div class="form-customs-group" data-field-type="text">
+                            <small>*Обязательные к заполнению поля</small>
+                        </div>
+                        <div>
+                            <div class="form-check d-flex align-items-start flex-wrap ps-0">
+                                <input type="hidden" name="personId">
+                                <input type="hidden" name="token">
+                                <a href="" class="btn btn-outline-dark me-1 mb-1 btn-back">Назад</a>
+                                <button type="submit" class="form-customs-btn btn btn-secondary mb-1">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </form>
+                    <input type="hidden" id="form-id" value="50">
+                    <input type="hidden" id="url-to-get-form-state" value="https://portal.inno.msk.ru/crm/project/48/event/34/forms/50/get-state/">
+                </div>
+            </section>
+        </div>
+
+        <div id="thankyou-text"></div>
+
+        <div id="continue-later-text" style="display: none"></div>
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+
+        <script src="static/js/main.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/jquery-form/form@4.3.0/dist/jquery.form.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('input[type="file"]').each(function () {
+                    var $input = $(this),
+                        $label = $input.parent('.form-customs-file').find('label').find('span'),
+                        labelVal = $label.html();
+        
+                    $input.on('change', function (element) {
+                        var fileName = '';
+                        if (element.target.value) fileName = element.target.value.split('\\').pop();
+                        fileName ? $label.html(fileName) : $label.html(labelVal);
+                    });
+                });
+        
+                $('input[type="checkbox"][data-nested-parent]').on('change', function () {
+                    $('[data-nested-child="' + $(this).data('nestedParent') + '"]')
+                        .prop('checked', false)
+                        .parent()
+                        .toggle($(this).prop('checked'));
+                });
+            });
+        
+            $(document).ready(function () {
+                $.fn.checkRequired = function () {
+                    const type = $(this).attr('data-field-type');
+                    let result = false;
+        
+                    if (type === 'text') {
+                        result = $(this).find('input[type=text]').val().trim().length > 0;
+                    } else if (type === 'textarea') {
+                        result = $(this).find('textarea').val().trim().length > 0;
+                    } else if (type === 'dropdownlist') {
+                        result = !!$(this).find('select').val() && $(this).find('select').val().trim().length > 0;
+                    } else if (type === 'checkbox' || type === 'checkboxlist' || type === 'nested_checkboxlist' || type === 'pd_agree') {
+                        result = $(this).find('input[type=checkbox]:checked').length > 0;
+                    } else if (type === 'radiobuttonlist') {
+                        result = $(this).find('input[type=radio]:checked').length > 0;
+                    } else if (type === 'file') {
+                        result = $(this).find('input[type=file]').val().trim().length > 0;
+                    }
+        
+                    if (result) {
+                        $(this).removeClass('form-customs-error');
+                        $(this).find('.form-customs-error-message').addClass('d-none');
+                    } else {
+                        $(this).addClass('form-customs-error');
+                        $(this).find('.form-customs-error-message').removeClass('d-none');
+                    }
+        
+                    return result;
+                };
+        
+                const formCustom = $('form[data-form-custom]');
+                $('.btn-back').click(function (e) {
+                    e.preventDefault();
+                    $(formCustom).hide();
+                    $(formCustom).first().show();
+                })
+        
+                $('#agree').click(function () {
+                    if ($('#agree').is(':checked')) {
+                        $(this).parents('form').find('.form-customs-btn').prop('disabled', false);
+                    } else {
+                        $(this).parents('form').find('.form-customs-btn').prop('disabled', true);
+                    }
+                });
+        
+                $('input[data-container="phone"]').inputmask('+7 (999) 999-99-99', {
+                    postValidation: function (buffer) {
+                        return !buffer.join('').match(/^\+7 \([78]/);
+                    },
+                    onincomplete: function () {
+                        $(this).val('');
+                        $(this).closest('.form-customs-group[required]').checkRequired();
+                    }
+                });
+        
+                $('input[data-container="email"]').inputmask({
+                    alias: 'email',
+                    onincomplete: function () {
+                        $(this).val('');
+                        $(this).closest('.form-customs-group[required]').checkRequired();
+                    }
+                });
+        
+                $(this).find('.form-customs-group[required]').find('input, textarea').on('blur', function () {
+                    $(this).closest('.form-customs-group[required]').checkRequired();
+                });
+        
+                $(this).find('.form-customs-group[required]').find('input[type=file]').on('change', function () {
+                    $(this).closest('.form-customs-group[required]').checkRequired();
+                });
+        
+        
+                let urlParams = new URLSearchParams(location.search);
+        
+                if (!!urlParams.get('personId') && !!urlParams.get('token')) {
+                    $.cookie('personId', urlParams.get('personId'));
+                    $.cookie('token', urlParams.get('token'));
+        
+                    urlParams.delete('personId');
+                    urlParams.delete('token');
+        
+                    querySearch = urlParams.toString();
+                    location.href = location.pathname + (querySearch.length ? '?' + querySearch : '');
+                }
+        
+                if (!!$.cookie('personId')) {
+                    window.location.href = 'https://starthub.moscow/result.html';
+                    $.post($('#url-to-get-form-state').val(), {
+                        'personId': $.cookie('personId'),
+                        'token': $.cookie('token'),
+                    }).then((data) => {
+                        if (!!data.sectionIndex && data.sectionIndex < $(formCustom).length) {
+                            $(formCustom).find('input[name="personId"]').val($.cookie('personId'));
+                            $(formCustom).find('input[name="token"]').val($.cookie('token'));
+                            $(formCustom).hide();
+                            $(formCustom).eq(data.sectionIndex).show();
+                        } else {
+                            $.removeCookie('personId');
+                            $.removeCookie('token');
+                            $(formCustom).first().show();
+                        }
+                    }).fail(() => {
+                        $.removeCookie('personId');
+                        $.removeCookie('token');
+                        $(formCustom).first().show();
+                    });
+                } else {
+                    $(formCustom).first().show();
+                }
+        
+                $(formCustom).on('submit', function (e) {
+                    e.preventDefault();
+        
+                    const submitButton = $(this).find('.form-customs-btn');
+                    $(submitButton).prop('disabled', true);
+        
+                    let hasErrors = false;
+        
+                    $(this).find('.form-customs-group[required]').each(function () {
+                        if (!$(this).checkRequired()) {
+                            hasErrors = true;
+                        }
+                    });
+        
+                    if (hasErrors) {
+                        $(this).find('.form-customs-btn').prop('disabled', false);
+        
+                        const firstErrorBlock = $(this).find('.form-customs-error').first();
+        
+                        $('html, body').animate({
+                            scrollTop: $(firstErrorBlock).offset().top - 60
+                        }, 'slow');
+        
+                        return false;
+                    }
+        
+                    $(this).ajaxSubmit({
+                        success: function (data) {
+                            $(this).find('.form-customs-btn').prop('disabled', false);
+                            if (!!data.success) {
+                                $(formCustom).filter(":visible").hide().next().show();
+        
+                                if ($(formCustom).filter(":visible").index() < 0) {
+                                    $.removeCookie('personId');
+                                    $.removeCookie('token');
+        
+                                    let promise = new Promise(function (resolve) {
+                                        if (!!data.text) {
+                                            $('#thankyou-text').html(data.text);
+                                            $.fancybox.open({
+                                                src: '#thankyou-text',
+                                                opts: {
+                                                    afterClose: function () {
+                                                        resolve(data);
+                                                    }
+                                                }
+                                            });
+                                        } else {
+                                            resolve(data);
+                                        }
+                                    });
+        
+                                    promise.then(
+                                        function (data) {
+                                            if (!!data.url) {
+                                                location.href = data.url;
+                                            } else {
+                                                document.location.reload();
+                                            }
+                                        }
+                                    );
+                                } else {
+                                    if (!!data.personId && !!data.token) {
+                                        $.cookie('personId', data.personId);
+                                        $.cookie('token', data.token);
+                                        $(formCustom).find('input[name="personId"]').val(data.personId);
+                                        $(formCustom).find('input[name="token"]').val(data.token);
+        
+                                        window.location.href = 'https://starthub.moscow/result.html';
+                                       /* if (!!data.continueLater) {
+        
+                                            const continueLaterText = $('#continue-later-text');
+                                            $(continueLaterText).html('Вы можете заполнить заявку сейчас или позже, ссылка на анкету отправлена вам на указанную электронную почту. К рассмотрению принимаются только полностью заполненные заявки.');
+                                            $(continueLaterText).dialog({
+                                                modal: true,
+                                                buttons: [
+                                                    /!*{
+                                                        text: 'Сейчас',
+                                                        click: function () {
+                                                            $(this).dialog('close');
+                                                        }
+                                                    },*!/
+                                                    {
+                                                        text: 'Ок',
+                                                        click: function () {
+                                                            $('#form-page').css('display', 'block').html(data.continueLater.successText);
+        
+                                                            $.post(data.continueLater.urlToSendLink, {
+                                                                'personId': data.personId,
+                                                                'token': data.token,
+                                                            });
+        
+                                                            $(this).dialog('close');
+                                                        }
+                                                    },
+                                                ]
+                                            });
+                                        }*/
+                                    }
+                                }
+                            } else if (!!data.error) {
+                                $.fancybox.open(
+                                    '<div class="form-customs-fancy" style="padding: 30px 40px;text-align: center">' +
+                                    '<h2>Ошибка</h2>' + data.errorText +
+                                    '</div>'
+                                );
+                            }
+                        },
+                        error: function (request) {
+                            $.fancybox.open(request.responseText);
+                            $(submitButton).prop('disabled', false);
+                        }
+                    });
+                });
+            })
+        </script>
+
+    </body>
+
+</html>

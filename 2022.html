@@ -1,0 +1,607 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>StartXMoscow</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+        <meta name="facebook-domain-verification" content="p80gebtr4axh4n96pe373ws33jygwu" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#eb00ff">
+        <meta name="msapplication-TileColor" content="#1a51f3">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+        <script src="static/js/separate-js/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <meta content="no" http-equiv="imagetoolbar">
+        <!-- ! Для production использовать vue_vuex_prod.js !-->
+        <script src="static/js/separate-js/vue_vuex.js"></script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '2868177430135183');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2868177430135183&ev=PageView&noscript=1" />
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+            ym(33209983, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        </script>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/33209983" style="position:absolute; left:-9999px;" alt="" />
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69227006-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-69227006-1');
+        </script>
+    </head>
+
+    <body class="page page-new">
+
+
+        <div class="page__wrapper">
+            <section class="section section-main" id="main">
+                <div class="container-fluid">
+                    <div class="row main">
+                        <!-- <div class="col-auto main-logo pe-lg-6">
+                     <a href="https://innoagency.ru/ru/" target="_blank">
+                         <img src="static/img/general/aim.svg" width="107">
+                     </a>
+                 </div>-->
+                        <div class="main-logo col-auto">
+                            <a href="https://starthub.moscow/">
+                                <img src="static/img/general/logo.svg" width="168">
+                            </a>
+                        </div>
+                        <div class="col-auto ms-auto mr-0 d-none d-sm-block">
+                            <ul class="main-nav">
+                                <li class="main-nav__item">
+                                    <a href="#steps">События</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#contacts">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--<div class="col-auto me-0 ms-auto main-header__btn">
+                    <div class="navbar-btn"></div>
+                </div>-->
+                        <!-- <div class="col-auto main-lang ms-auto ms-sm-0 mr-0 ">
+                    <div class="main-lang__item active">RU</div>
+                    <a href="en.html" class="main-lang__item">EN</a>
+                </div>-->
+                    </div>
+
+                    <div class="main-title">
+                        <h1>StartHub.Moscow</h1>
+                        <p>Место, где бизнес становится большим</p>
+                    </div>
+
+                    <div class="main-desc">
+                        <div class="row g-0">
+                            <div class="main-desc__block col-md-6">
+                                <p>Программа StartHub.Moscow — бесплатная программа кратного роста бизнеса для технологических предпринимателей</p>
+                                <!-- <a href="https://starthub.moscow/application" class="btn btn-secondary">
+                             Подать заявку
+                         </a>-->
+                                <!-- <a data-fancybox="" data-src="#endmodal" data-modal="true" href="javascript:;" class="btn btn-secondary">Узнать результаты</a>-->
+                                <a href="../files/Результаты_отбора_StartHubMoscow.pdf" target="_blank" class="btn btn-secondary">Узнать результаты</a>
+
+                            </div>
+                            <div class="main-desc__subtitle col-md-6">
+                                <p>В отличие от традиционных акселераторов, в этом проекте нет отраслевых треков и корпораций-заказчиков.
+                                </p>
+                                <p>В каждый набор попадают инновационные стартапы, которые без отрыва от рабочих процессов могут развивать свой бизнес.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-modal form-modal_small" id="endmodal">
+                        <button type="button" data-fancybox-close="" class="form-modal__close"></button>
+                        <h4>
+                    Благодарим за интерес к программе StartHub.Moscow. К сожалению, прием заявок завершен. Результаты отбора будут опубликованы 24 мая 2022 г.
+                </h4>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-statistic" id="statistic">
+                <div class="images">
+                    <div></div>
+                    <a href="static/img/content/images/1.jpg" class="images-item" data-fancybox="images" style="background-image: url('static/img/content/images/1.jpg')"></a>
+                    <a href="static/img/content/images/2.jpg" class="images-item" data-fancybox="images" style="background-image: url('static/img/content/images/2.jpg')"></a>
+                    <a href="static/img/content/images/3.jpg" class="images-item images-item_2r" data-fancybox="images" style="background-image: url('static/img/content/images/3.jpg')"></a>
+                    <a href="static/img/content/images/4.jpg" class="images-item" data-fancybox="images" style="background-image: url('static/img/content/images/4.jpg')"></a>
+                    <a href="static/img/content/images/5.jpg" class="images-item" data-fancybox="images" style="background-image: url('static/img/content/images/5.jpg')"></a>
+                    <a href="static/img/content/images/6.jpg" class="images-item" data-fancybox="images" style="background-image: url('static/img/content/images/6.jpg')"></a>
+                    <a href="static/img/content/images/7.jpg" class="images-item" data-fancybox="images" style="background-image: url('static/img/content/images/7.jpg')"></a>
+                    <div></div>
+                </div>
+                <div class="container-fluid">
+                    <div class="statistic row">
+                        <div class="statistic-item col-md-3 col-6">
+                            <p class="statistic-item__title">200+</p>
+                            <p class="statistic-item__subtitle">компаний-участников</p>
+                        </div>
+                        <div class="statistic-item col-md-3 col-6">
+                            <p class="statistic-item__title">3X</p>
+                            <p class="statistic-item__subtitle">средний рост выручки стартапов</p>
+                        </div>
+                        <div class="statistic-item col-md-3 col-6">
+                            <p class="statistic-item__title">1+ млрд р</p>
+                            <p class="statistic-item__subtitle">привлеченного финансирования</p>
+                        </div>
+                        <div class="statistic-item col-md-3 col-6">
+                            <p class="statistic-item__title">10</p>
+                            <p class="statistic-item__subtitle">стартапов впервые вышли на зарубежные рынки</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-benefits" id="benefits">
+                <div class="container-fluid">
+                    <div class="benefits opportunity">
+                        <h4>
+                    Возможности
+                </h4>
+                        <div class="row g-0 benefits-list">
+                            <div class="col-md-4 col-6 benefits-item ">
+                                <figure class="benefits-item__img">
+                                    <svg class="svg-icon" width="32">
+                                        <use xlink:href="static/img/svg-sprite/svg-symbols.svg#program"></use>
+                                    </svg>
+                                </figure>
+                                <h6 class="benefits-item__title">Обучение</h6>
+                                <p class="benefits-item__text">лекции, воркшопы, практика, трекинг</p>
+                            </div>
+                            <div class="col-md-4 col-6 benefits-item ">
+                                <figure class="benefits-item__img">
+                                    <svg class="svg-icon" width="36">
+                                        <use xlink:href="static/img/svg-sprite/svg-symbols.svg#mentoring"></use>
+                                    </svg>
+                                </figure>
+                                <h6 class="benefits-item__title">Менторство</h6>
+                                <p class="benefits-item__text">индивидуальные консультации, экспертные сессии</p>
+                            </div>
+                            <div class="col-md-4 col-6 benefits-item ">
+                                <figure class="benefits-item__img">
+                                    <svg class="svg-icon" width="49">
+                                        <use xlink:href="static/img/svg-sprite/svg-symbols.svg#community"></use>
+                                    </svg>
+                                </figure>
+                                <h6 class="benefits-item__title">Комьюнити</h6>
+                                <p class="benefits-item__text">командные игры, выездные мероприятия, клуб выпускников</p>
+                            </div>
+                            <div class="col-md-4 col-6 benefits-item ">
+                                <figure class="benefits-item__img">
+                                    <svg class="svg-icon" width="56">
+                                        <use xlink:href="static/img/svg-sprite/svg-symbols.svg#residents"></use>
+                                    </svg>
+                                </figure>
+                                <h6 class="benefits-item__title">Пространство</h6>
+                                <p class="benefits-item__text">комфортная площадка для работы и нетворкинга</p>
+                            </div>
+                            <div class="col-md-4 col-6 benefits-item ">
+                                <figure class="benefits-item__img">
+                                    <svg class="svg-icon" width="32">
+                                        <use xlink:href="static/img/svg-sprite/svg-symbols.svg#networking"></use>
+                                    </svg>
+                                </figure>
+                                <h6 class="benefits-item__title">Инвестиции</h6>
+                                <p class="benefits-item__text">питч-сессии, бизнес- завтраки, тематические мероприятия с корпорациями и инвесторами</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-goals" id="goals">
+                <div class="container-fluid">
+                    <h2>Цели</h2>
+                    <div class="goals">
+                        <div class="goals-item">
+                            <figure class="goals-item__figure">
+                                <svg class="svg-icon" width="47">
+                                    <use xlink:href="static/img/svg-sprite/svg-symbols.svg#goal-1"></use>
+                                </svg>
+                            </figure>
+                            <h4 class="goals-item__title">Прокачать продукт</h4>
+                            <p class="goals-item__text">Бизнес-процессы, команда, интеллектуальная собственность</p>
+                        </div>
+                        <div class="goals-item">
+                            <figure class="goals-item__figure">
+                                <svg class="svg-icon" width="42">
+                                    <use xlink:href="static/img/svg-sprite/svg-symbols.svg#goal-2"></use>
+                                </svg>
+                            </figure>
+                            <h4 class="goals-item__title">Усилить продажи</h4>
+                            <p class="goals-item__text">Выбор и тестирование ниши, маркетинг, масштабирование продаж</p>
+                        </div>
+                        <div class="goals-item">
+                            <figure class="goals-item__figure">
+                                <svg class="svg-icon" width="42">
+                                    <use xlink:href="static/img/svg-sprite/svg-symbols.svg#goal-3"></use>
+                                </svg>
+                            </figure>
+                            <h4 class="goals-item__title">Привлечь инвестиции</h4>
+                            <p class="goals-item__text">Инвестиционная упаковка, питчинг</p>
+                        </div>
+                    </div>
+                    <p>Участники программы бесплатно пользуются коворкингом на технологической площадке Старт Хаб на Красном Октябре, посещают профильные и отраслевые мероприятия, разрабатывают дорожную карту развития бизнеса, получают доступ к экспертным
+                        ресурсам, а в конце презентуют свои продукты и сервисы венчурным фондам, городу, частным инвесторам и крупному бизнесу.
+                    </p>
+                    <p>В ноябре 2021 года программа StartHub.Moscow стала лауреатом премии Investment Leaders Award 2021, победив в номинации «Лучшая программа венчурного финансирования».
+                    </p>
+
+                </div>
+            </section>
+            <section class="section section-timeline" id="timeline">
+                <div class="container-fluid">
+                    <h2>Таймлайн</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <p class="timeline-item__year">2021</p>
+                            <h4 class="timeline-item__title">Первый набор</h4>
+                            <p class="timeline-item__text">100 стартапов</p>
+                            <div class="timeline-item__logos">
+                                <img src="static/img/content/timeline-logo/1.png" width="28">
+                                <img src="static/img/content/timeline-logo/2.png" width="63">
+                                <img src="static/img/content/timeline-logo/3.png" width="72">
+                            </div>
+                            <small>и ещё 97 стартапов</small>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="timeline-item__year">2021-2022</p>
+                            <h4 class="timeline-item__title">Второй набор</h4>
+                            <p class="timeline-item__text">105 стартапов</p>
+                            <div class="timeline-item__logos">
+                                <img src="static/img/content/timeline-logo/4.png" width="70">
+                                <img src="static/img/content/timeline-logo/5.png" width="75">
+                                <img src="static/img/content/timeline-logo/6.png" width="68">
+                            </div>
+                            <small>и ещё 102 стартапа</small>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="timeline-item__year">2022</p>
+                            <h4 class="timeline-item__title">Третий набор</h4>
+                            <p class="timeline-item__subtitle">Здесь может быть твой стартап!</p>
+                            <!--<a href="https://starthub.moscow/application" class="btn btn-secondary">Подать заявку</a>-->
+                            <!-- <a  data-fancybox="" data-src="#endmodal" data-modal="true" href="javascript:;" class="btn btn-secondary">Узнать результаты</a>-->
+                            <a href="../files/Результаты_отбора_StartHubMoscow.pdf" target="_blank" class="btn btn-secondary">Узнать результаты</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="section section-residents" id="residents">
+                <div class="container-fluid">
+                    <h2>Резиденты</h2>
+                    <div class="residents">
+                        <a href="static/img/general/resident-diagram.png" class="resident__diagram" data-fancybox="diagram">
+                            <img src="static/img/general/resident-diagram.png">
+                        </a>
+                        <a href="static/img/general/resident-funnel.png" class="resident__funnel" data-fancybox="funnel">
+                            <img src="static/img/general/resident-funnel.png">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-cases" id="cases">
+                <div class="container-fluid">
+                    <h2>Кейсы выпускников</h2>
+                    <div class="cases">
+                        <div class="cases-item">
+                            <figure class="cases-item__figure">
+                                <img src="static/img/content/cases/1.png" width="49">
+                            </figure>
+                            <h4 class="cases-item__title">Joys</h4>
+                            <p class="cases-item__subtitle">400 млн ₽
+                                <br/>инвестиций привлечено</p>
+                            <p class="cases-item__text">Единственный платежный сервис в России для расчетов в цифровых финансовых активах, то есть в криптовалюте. После участия в программе стартап привлек крупные инвестиции от зарубежного фонда и вышел на два новых зарубежных рынка.</p>
+                        </div>
+                        <div class="cases-item">
+                            <figure class="cases-item__figure">
+                                <img src="static/img/content/cases/2.png" width="124">
+                            </figure>
+                            <h4 class="cases-item__title">ICowork</h4>
+                            <p class="cases-item__subtitle">70 тыс. $
+                                <br/>инвестиций привлечено</p>
+                            <p class="cases-item__text">Маркетплейс гибких пространств. Сервис позволяет в три клика забронировать и оплатить кабинет, рабочее место или переговорную в коворкингах и гостиницах.
+                            </p>
+                        </div>
+                        <div class="cases-item">
+                            <figure class="cases-item__figure">
+                                <img src="static/img/content/cases/3.png" width="134">
+                            </figure>
+                            <h4 class="cases-item__title">Intelligent University</h4>
+                            <p class="cases-item__subtitle">47,5 млн ₽
+                                <br/>инвестиций привлечено</p>
+                            <p class="cases-item__text">Облачная платформа для подбора и управления командами продуктовой разработки, которые работают в удалённом формате.</p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://youtu.be/WMh_0-gprwk" data-fancybox="demoday" class="btn btn-sm btn-outline-secondary me-2 mb-2">Смотреть запись демо-дня</a>
+                        <a href="../files/Catalog.pdf" target="_blank" class="btn btn-sm btn-outline-dark me-2 mb-2">Cкачать 200 кейсов</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-steps" id="steps">
+                <div class="container-fluid">
+                    <div class="steps">
+                        <div class="step-item pb-9">
+                            <p class="step-item__date">до 12 апреля 2022</p>
+                            <h5 class="step-item__title">Прием заявок</h5>
+                        </div>
+                        <div class="step-item pb-7">
+                            <p class="step-item__date">24 мая 2022</p>
+                            <h5 class="step-item__title">Публикация списка участников на сайте</h5>
+                        </div>
+                        <div class="step-item">
+                            <p class="step-item__date">1 июня 2022</p>
+                            <h5 class="step-item__title">Старт программы</h5>
+                            <p class="step-item__text">Длительность программы — 5 месяцев</p>
+                        </div>
+                    </div>
+                    <h4 class="mb-4">Мы ждем на программе компании, зарегистрированные в Москве:</h4>
+                    <div class="stages">
+                        <div class="stage-item">
+                            <p class="stage-item__number">1</p>
+                            <h5 class="stage-item__title">Стадия pre-seed</h5>
+                            <p class="stage-item__text">У вас есть компания, команда и MVP, нет продаж или есть единичные, вы хотите найти product market fit и выйти на систематические продажи.</p>
+                        </div>
+                        <div class="stage-item">
+                            <p class="stage-item__number">2</p>
+                            <h5 class="stage-item__title">Seed стадия</h5>
+                            <p class="stage-item__text">У вас есть команда, продукт и продажи, вы хотите найти эффективные каналы продаж и расти от месяца к месяцу.</p>
+                        </div>
+                        <div class="stage-item">
+                            <p class="stage-item__number">3</p>
+                            <h5 class="stage-item__title">Вы представляете корпорацию</h5>
+                            <p class="stage-item__text">У вас есть внутренние стартапы и вы хотите проверить на жизнеспособность команды и бизнес-модели. Направляете сотрудников к нам на акселерацию, а мы предоставляем коворкинг и экспертные ресурсы для создания рыночного продукта.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-smi" id="smi">
+                <div class="container-fluid">
+                    <h2>СМИ о нас</h2>
+                    <div class="smi">
+                        <div class="smi-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide smi-item">
+                                    <p class="smi-item__title">Участники StartHub.Moscow привлекли свыше одного миллиарда рублей инвестиций <a href="https://vm.ru/news/959793-uchastniki-starthubmoscow-privlekli-bolee-odnogo-milliarda-rublej-investicij?utm_source&#x3D;yxnews&amp;utm_medium&#x3D;desktop&amp;utm_referrer&#x3D;https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D"
+                                        target="_blank">>></a>
+                                    </p>
+                                    <img class="smi-item__img" src="static/img/content/smi/3.png" width="81">
+                                </div>
+                                <div class="swiper-slide smi-item">
+                                    <p class="smi-item__title">Технохаб: стартовый комплекс для стартапов<a href="https://nat-geo.ru/special/tehnohab-startovyj-kompleks-dlya-startapov/" target="_blank">>></a>
+                                    </p>
+                                    <img class="smi-item__img" src="static/img/content/smi/1.png" width="129">
+                                </div>
+                                <div class="swiper-slide smi-item">
+                                    <p class="smi-item__title">Зачем стартапам и городу технохабы?<a href="https://incrussia.ru/specials/technohubs/" target="_blank">>></a>
+                                    </p>
+                                    <img class="smi-item__img" src="static/img/content/smi/2.png" width="50">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination d-lg-none"></div>
+                        </div>
+                        <div class="swiper-button-prev d-none d-lg-block"></div>
+                        <div class="swiper-button-next d-none d-lg-block"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-special" id="special">
+                <div class="container-fluid">
+                    <h2>Спецпроекты</h2>
+                    <div class="special">
+                        <div class="special-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="special-item">
+                                        <h5 class="special-item__title">Подкаст «Боссы в кроссах»</h5>
+                                        <p class="special-item__text">Гостями третьего сезона стали резиденты программы StartHub.Moscow — молодые предприниматели, которые пришли в проект, чтобы развивать и масштабировать свой бизнес. Подкаст «Боссы в кроссах» — это интервью с предпринимателями
+                                            и прикладные бизнес-кейсы в интенсивном, рассчитанном на 25-минутную пробежку, формате. С участниками программы уже вышло четыре выпуска, их можно послушать в Яндекс.Музыке, Google Podcasts, Apple Podcasts,
+                                            а также на Castbox.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="special-item">
+                                        <h5 class="special-item__title">Фотопроект «Мой скейлап — мои правила»</h5>
+                                        <p class="special-item__text">Героями фотопроекта выступили 10 резидентов StartHub.Moscow — молодые предприниматели, которые пришли в программу, чтобы развивать и масштабировать бизнес, а также искусственный интеллект Дизраэли, созданный еще
+                                            одним участником StartHub.Moscow — Георгием Брегманом. Они поделились своими взглядами на жизнь и работу, а также дали советы основателям компаний и скейлапов — стартапов, показывающих значительный рост и готовых
+                                            к масштабированию.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="special-item">
+                                        <h5 class="special-item__title">Подкаст «Боссы в кроссах»</h5>
+                                        <p class="special-item__text">Гостями третьего сезона стали резиденты программы StartHub.Moscow — молодые предприниматели, которые пришли в проект, чтобы развивать и масштабировать свой бизнес. Подкаст «Боссы в кроссах» — это интервью с предпринимателями
+                                            и прикладные бизнес-кейсы в интенсивном, рассчитанном на 25-минутную пробежку, формате. С участниками программы уже вышло четыре выпуска, их можно послушать в Яндекс.Музыке, Google Podcasts, Apple Podcasts,
+                                            а также на Castbox.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="special-item">
+                                        <h5 class="special-item__title">Фотопроект «Мой скейлап — мои правила»</h5>
+                                        <p class="special-item__text">Героями фотопроекта выступили 10 резидентов StartHub.Moscow — молодые предприниматели, которые пришли в программу, чтобы развивать и масштабировать бизнес, а также искусственный интеллект Дизраэли, созданный еще
+                                            одним участником StartHub.Moscow — Георгием Брегманом. Они поделились своими взглядами на жизнь и работу, а также дали советы основателям компаний и скейлапов — стартапов, показывающих значительный рост и готовых
+                                            к масштабированию.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination d-lg-none"></div>
+                        <div class="swiper-button-prev d-none d-lg-block"></div>
+                        <div class="swiper-button-next d-none d-lg-block"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-contacts" id="contacts">
+                <div class="container-fluid">
+                    <div class="contacts">
+                        <h2>Контакты</h2>
+                        <div class="row justify-content-between">
+                            <div class="col-lg-6 mb-4">
+                                <div class="contacts-address">
+                                    г. Москва, Берсеневская набережная, дом 6, стр.3, этаж 4
+                                </div>
+                                <a href="https://tech.cdp.events/map" target="_blank" class="contacts-link">Схема проезда</a>
+                            </div>
+                            <!--  <div class="col-lg-5 mb-4">
+                        <a href="#" class="contacts-phone">+7 (499) 286-85-59</a>
+                        <p>Ежедневно с 9:00 до 21:00</p>
+                    </div>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="section page__footer page-new__footer">
+                <div class="container-fluid">
+                    <div class="footer">
+                        <div class="footer__row">
+                            <div class="footer__logo mb-3 mb-sm-5">
+                                <a href="https://starthub.moscow/">
+                                    <img src="static/img/general/logo.svg" width="278">
+                                </a>
+                            </div>
+                            <ul class="footer-nav d-none d-md-block">
+                                <li class="footer-nav__item">
+                                    <a href="#steps">События</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#contacts">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="d-none d-sm-block mb-5 mb-md-0">
+                                <!-- <a href="https://starthub.moscow/application" class="btn btn-secondary w-100 px-lg-2">Подать заявку</a>-->
+                                <!--<a  data-fancybox="" data-src="#endmodal" data-modal="true" href="javascript:;" class="btn btn-secondary w-100 px-lg-2">Узнать результаты</a> -->
+                                <a href="../files/Результаты_отбора_StartHubMoscow.pdf" target="_blank" class="btn btn-secondary w-100 px-lg-2">Узнать результаты</a>
+                            </div>
+                        </div>
+                        <div class="footer__row">
+                            <div class="footer__logo mb-3 mb-sm-0">
+                                <!--<a href="https://innoagency.ru/ru/" target="_blank" class="me-3">
+                            <img src="static/img/general/aim.svg" width="101">
+                        </a>
+                        <a href="https://www.mos.ru/dpir/" target="_blank">
+                            <img src="static/img/general/starthub.svg" width="124">
+                        </a>-->
+                            </div>
+                            <div class="d-sm-none mb-5 mb-md-0">
+                                <!-- <a href="https://starthub.moscow/application" class="btn btn-secondary w-100 px-lg-2">Подать заявку</a>-->
+                                <!-- <a  data-fancybox="" data-src="#endmodal" data-modal="true" href="javascript:;" class="btn btn-secondary w-100 px-lg-2">Узнать результаты</a>-->
+                                <a href="../files/Результаты_отбора_StartHubMoscow.pdf" target="_blank" class="btn btn-secondary w-100 px-lg-2">Узнать результаты</a>
+                            </div>
+                            <div class="mb-3 mb-sm-0">
+                                <p>Остались вопросы?</p>
+                                <a href="mailto:hub@develop.mos.ru" class="footer__link">hub@develop.mos.ru</a>
+                            </div>
+                            <div class="align-self-end">
+                                <div class="footer-social ">
+                                    <!-- <a href="https://www.facebook.com/starthub.moscow" target="_blank" class="footer-social__item">
+                                <svg class="svg-icon" width="7">
+                                    <use xlink:href="static/img/svg-sprite/svg-symbols.svg#fb"></use>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/startxmoscow/" target="_blank" class="footer-social__item">
+                                <svg class="svg-icon" width="15">
+                                    <use xlink:href="static/img/svg-sprite/svg-symbols.svg#inst"></use>
+                                </svg>
+                            </a>-->
+                                    <a href="https://www.tiktok.com/@starthub.moscow" target="_blank" class="footer-social__item">
+                                        <svg class="svg-icon" width="13">
+                                            <use xlink:href="static/img/svg-sprite/svg-symbols.svg#tt"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://t.me/+Lsq5m-wqDWhlOGQy" class="social__item">
+                                        <svg class="svg-icon" width="13">
+                                            <use xlink:href="static/img/svg-sprite/svg-symbols.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://vk.com/startxmoscow" class="social__item">
+                                        <svg class="svg-icon" width="13">
+                                            <use xlink:href="static/img/svg-sprite/svg-symbols.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </footer>
+        </div>
+
+
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+
+        <script src="static/js/main.min.js"></script>
+
+
+    </body>
+
+</html>
